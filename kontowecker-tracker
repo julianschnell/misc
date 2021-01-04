@@ -25,7 +25,7 @@ function doGet() {
 
 function saveDataToSheet(balance)
 {
-  var url = "https://docs.google.com/spreadsheets/d/12xqCj7TtKpiVNMoMeJytYxeVfzAh72cGqmq2kbpXVNk/edit"
+  var url = "%SPREADSHEETURL%"
   var sheetname = "Asset Allocation"
   var spreadsheet = SpreadsheetApp.openByUrl(url);
   var sheet = spreadsheet.getSheetByName(sheetname);
